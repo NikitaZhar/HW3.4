@@ -11,11 +11,22 @@ struct ContentView: View {
     @State private var targetValue = Int.random(in: 0...100)
     @State private var sliderValue = 50.0
     @State var showAResult = false
+    let color: UIColor
+    
     var body: some View {
         VStack {
             Text("Подвинь слайдер как можно ближе к : \(targetValue)")
                 .font(.footnote)
-            slider(sliderValue: $sliderValue)
+            HStack {
+                Text("0")
+                ColorUISlider(color: color,
+                              sliderValue: $sliderValue,
+                              alpha: .constant(Double(computeScore())/100.0))
+                    .accentColor(Color(color))
+                    .frame(width: 300, height: 50)
+                Text("100")
+            }
+            
             Button(action: { showAResult = true } ) {
                 Text("Проверь меня!")
             }
@@ -43,21 +54,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(color: .green)
     }
-}
-
-struct slider: View {
-    @Binding var sliderValue: Double
-    
-    var body: some View {
-        HStack {
-            Text("0")
-            Slider(value: $sliderValue, in: 0...100, step: 1)
-            Text("100")
-        }
-        .padding(.horizontal)
-    }
-    
-
 }

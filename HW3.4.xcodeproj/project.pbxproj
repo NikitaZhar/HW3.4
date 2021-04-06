@@ -11,6 +11,7 @@
 		534B10B6261CCFD2009F17D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534B10B5261CCFD2009F17D0 /* ContentView.swift */; };
 		534B10B8261CCFD6009F17D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534B10B7261CCFD6009F17D0 /* Assets.xcassets */; };
 		534B10BB261CCFD6009F17D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534B10BA261CCFD6009F17D0 /* Preview Assets.xcassets */; };
+		534B10C6261CE794009F17D0 /* ColorUISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534B10C5261CE794009F17D0 /* ColorUISlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		534B10B7261CCFD6009F17D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		534B10BA261CCFD6009F17D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		534B10BC261CCFD6009F17D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		534B10C5261CE794009F17D0 /* ColorUISlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUISlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				534B10B3261CCFD2009F17D0 /* HW3_4App.swift */,
 				534B10B5261CCFD2009F17D0 /* ContentView.swift */,
+				534B10C5261CE794009F17D0 /* ColorUISlider.swift */,
 				534B10B7261CCFD6009F17D0 /* Assets.xcassets */,
 				534B10BC261CCFD6009F17D0 /* Info.plist */,
 				534B10B9261CCFD6009F17D0 /* Preview Content */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				534B10C6261CE794009F17D0 /* ColorUISlider.swift in Sources */,
 				534B10B6261CCFD2009F17D0 /* ContentView.swift in Sources */,
 				534B10B4261CCFD2009F17D0 /* HW3_4App.swift in Sources */,
 			);
